@@ -4,7 +4,9 @@ import './App.css'
 import Objects from './Matter'
 
 function App() {
-  
+  const refresh = () => {
+    window.location.reload()
+  }
 
   return (
     <>
@@ -12,7 +14,7 @@ function App() {
      <div className='container'> 
       <p>opps! 404 Error!</p>
       <h1>Page Not Found</h1>
-      <button><span> <LuChevronLeft /></span> Back to Home </button>
+      <button onClick={refresh}><span> <LuChevronLeft /></span> Back to Home </button>
      </div>
       <Objects />
     </section>

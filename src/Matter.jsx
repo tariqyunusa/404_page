@@ -29,7 +29,9 @@ const Objects = () => {
       Runner = Matter.Runner,
       Bodies = Matter.Bodies,
       Composite = Matter.Composite,
-      Events = Matter.Events;
+      Events = Matter.Events,
+      Mouse = Matter.Mouse,
+      MouseConstraint = Matter.MouseConstraint;
 
     // Engine
     const engine = Engine.create();
@@ -55,6 +57,7 @@ const Objects = () => {
           {
             label: item.no,
             chamfer: { radius: 30 },
+            friction: 10,
            render: {
           
             // lineWidth: 5,
@@ -68,6 +71,9 @@ const Objects = () => {
     const ground = Bodies.rectangle(width / 2, height, width, 1, { isStatic: true });
     const leftWall = Bodies.rectangle(0, height / 2, 1, height, { isStatic: true });
     const rightWall = Bodies.rectangle(width, height / 2, 1, height, { isStatic: true })
+
+      // mouse controls
+      
 
     // Add all the bodies to the world
     Composite.add(engine.world, [...boxes, ground, leftWall, rightWall]);
@@ -121,6 +127,7 @@ const Objects = () => {
             fontWeight: "bold",
             pointerEvents: "none",
             textAlign: "center",
+            
             // backgroundColor: "rgba(0, 0, 0, 0.5)",
           }}
         >

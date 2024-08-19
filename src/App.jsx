@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import { LuChevronLeft } from "react-icons/lu";
 import './App.css'
 import Objects from './Matter'
 
@@ -8,8 +8,14 @@ function App() {
 
   return (
     <>
-    {/* <h1>Experiment</h1> */}
+    <section>
+     <div className='container'> 
+      <p>opps! 404 Error!</p>
+      <h1>Page Not Found</h1>
+      <button><span> <LuChevronLeft /></span> Back to Home </button>
+     </div>
       <Objects />
+    </section>
     </>
   )
 }

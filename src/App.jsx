@@ -13,7 +13,7 @@ function App() {
       duration: 1,
       stagger: 0.2,
       onComplete: () => {
-        window.location.reload(); // Reload the page after the animation completes
+        window.location.reload();
       }
     });
   };

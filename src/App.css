@@ -20,12 +20,12 @@ section{
     align-items: center;
 }
 button {
-    display: inline-flex; /* Use inline-flex to prevent the button from spanning full width */
+    display: inline-flex; 
     align-items: center;
     width: 250px;
-    padding: 0.5rem 1rem; /* Adjust padding for spacing inside the button */
-    margin-top: 1rem; /* Optional: Add margin to separate the button from other elements */
-    background-color: #fff; /* Button background color */
+    padding: 0.5rem 1rem; 
+    margin-top: 1rem; 
+    background-color: #fff; 
     border: none;
     outline: none;
     cursor: pointer;
